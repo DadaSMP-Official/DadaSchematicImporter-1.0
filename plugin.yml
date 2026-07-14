@@ -1,0 +1,18 @@
+name: DadaSchematicImporter
+version: 1.0.0
+main: it.dadasmp.schematic.DadaSchematicImporter
+api-version: '1.20'
+depend:
+  - WorldEdit
+commands:
+  dadaimportsunken:
+    description: Importa la schematic Sunken Spire in un mondo di test.
+    usage: /dadaimportsunken [force]
+    permission: dadaimportsunken.admin
+  dadasunken:
+    description: Teletrasporta al mondo Sunken Spire importato.
+    usage: /dadasunken
+    permission: dadaimportsunken.admin
+permissions:
+  dadaimportsunken.admin:
+    default: op
